@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get install -y git && \
     # curl -L https://npmjs.org/install.sh | sh && \
     mix local.hex --force && \
-    mix archive.install hex phx_new ${PHX_VERSION} --force && \
+    mix archive.install hex phx_new && \
     mix local.rebar --force
 
 ENV APP_HOME /app
